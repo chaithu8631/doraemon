@@ -61,11 +61,20 @@ function draw() {
     r.DrawLineEx({ x: 400, y: 175 }, { x: 400, y: 275 }, 3, outline);
 
     //mouth
-    r.DrawCircleSector({ x: 400, y: 175 }, 100, -80, 80, 40, outline);
-    r.DrawCircleSector({ x: 400, y: 175 }, 97, -80, 80, 40, r.WHITE);
+    r.DrawRing({ x: 400, y: 175 }, 99, 101, -75, 75, 40, outline);
+    
+    //meesalu(moustache)
 
-    //Draw Nose Line again from nose to mouth
-    r.DrawLineEx({ x: 400, y: 175 }, { x: 400, y: 275 }, 3, outline);
+    //LeftSide
+    r.DrawLineEx({x:340,y:195},{x:270,y:175},3,outline);
+    r.DrawLineEx({x:340,y:215},{x:260,y:215},3,outline);
+    r.DrawLineEx({x:340,y:235},{x:270,y:255},3,outline);
+
+    //RightSide
+    r.DrawLineEx({x:460,y:195},{x:530,y:175},3,outline);
+    r.DrawLineEx({x:460,y:215},{x:540,y:215},3,outline);
+    r.DrawLineEx({x:460,y:235},{x:530,y:255},3,outline);
+
 
     r.EndDrawing();
 }
