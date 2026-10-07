@@ -75,6 +75,9 @@ function draw() {
     r.DrawLineEx({x:460,y:215},{x:540,y:215},3,outline);
     r.DrawLineEx({x:460,y:235},{x:530,y:255},3,outline);
 
+    //Red tie
+    r.DrawRectangleRec({x:290,y:295,width:220,height:16},outline);
+    r.DrawRectangleRec({x:292,y:297,width:216,height:12},outline);
 
     r.EndDrawing();
 }
