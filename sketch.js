@@ -44,14 +44,14 @@ function draw() {
     // r.DrawEllipse()
     r.DrawEllipse(facex - 35, facey - 65, 35, 45, outline);
     r.DrawEllipse(facex - 35, facey - 65, 33, 43, r.WHITE);
-    r.DrawEllipse(facex - 35, facey - 65, 15, 20, r.BLACK); // Pupil
-    r.DrawEllipse(facex - 35, facey - 65, 5, 8, r.WHITE); // Pupil
+    r.DrawEllipse(facex - 25, facey - 45, 15, 20, r.BLACK); // Pupil
+    r.DrawEllipse(facex - 25, facey - 45, 5, 8, r.WHITE); // Pupil
     // x-15,y-40
     // Right Eye
     r.DrawEllipse(facex + 35, facey - 65, 35, 45, outline);
     r.DrawEllipse(facex + 35, facey - 65, 33, 43, r.WHITE);
-    r.DrawEllipse(facex + 35, facey - 65, 15, 20, r.BLACK); // Pupil
-    r.DrawEllipse(facex + 35, facey - 65, 5, 8, r.WHITE); // Pupil
+    r.DrawEllipse(facex + 25, facey - 45, 15, 20, r.BLACK); // Pupil
+    r.DrawEllipse(facex + 25, facey - 45, 5, 8, r.WHITE); // Pupil
 
     //Nose
     r.DrawCircle(facex, facey - 25, 20, outline);
